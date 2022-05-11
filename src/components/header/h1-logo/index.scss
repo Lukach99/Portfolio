@@ -1,0 +1,11 @@
+@import "src/styles/colors.scss";
+
+.logo{
+    color: $color-primary;
+    p{
+        display: inline-block;
+        color: $color-tertiary;
+        margin: 0;
+    }
+
+}
