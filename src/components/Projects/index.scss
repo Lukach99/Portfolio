@@ -1,0 +1,41 @@
+@import "src/styles/placement.scss";
+@import "src/styles/colors.scss";
+
+.projects{
+    background-color: $color-primary;
+    p{
+        
+        font-size: 17px;
+    }
+    .projects__p-1{
+        font-size: 30px;
+    }
+    .projects__p{
+        text-align: center;
+
+        
+    }
+    
+    h2{
+        position: relative;
+        font-size: 55px;
+        margin-bottom: 80px;
+        z-index: 1;
+        &::after{
+            position: absolute;
+            content: '';
+            height:20px;
+            background-color: $color-tertiary;
+            width: 100%;
+            bottom: -5px;
+            left: 30px;
+            display: block;
+            /* transform-origin: bottom; */
+            
+            z-index: -1 ;
+            
+        }
+    }
+
+    
+}

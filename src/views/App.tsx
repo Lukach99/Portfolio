@@ -4,6 +4,7 @@ import Header from '../components/header';
 
 import './App.scss';
 import About from '../components/About';
+import Projects from '../components/Projects';
 
 function App() {
   return ( 
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Home></Home>
       <About></About>
+      <Projects></Projects>
 
       
 

@@ -1,5 +1,7 @@
 import AboutImg from "./AboutImg";
 import "./index.scss";
+import profilePic from "../../images/profile-pic.jpg"
+
 
 const imageLinks = [{
     name: "html",
@@ -33,15 +35,30 @@ const About = (props:any) => {
         <AboutImg name={item.name.toUpperCase()} imageLink={item.imageLink} ></AboutImg>)})
 
     return(
-        <section className={`about flex flex-justify-start flex-align-center flex-column`} >
+        <section id="about" className={`about flex flex-justify-start flex-align-center flex-column`} >
             <h2>About</h2>
 
+
+            <article >
             <div className="flex ">
-            <p>Just a young guy with passion for technology and photography, I'm a front-end developer with skills in JavaScript, React , Typescript, HTML and CSS. The unique combination of creativity, logic, technology and never running out of new things to discover, drives my excitement and passion for web development. When I'm not coding I like to spend my time playing video games, hang out with friends and watch movies.</p>
-            <section className="skills">
+                <div className="img-div" >
+                <img className="profile-pic" src={profilePic} width="300" alt="bzbz"/>
+                </div>
+            
+            <div>
+            <p>Just a young guy with passion for technology and photography, I'm a front-end developer with skills in JavaScript, React , Typescript, HTML and CSS. The unique combination of creativity, logic, technology and never running out of new things to discover, drives my excitement and passion for web development. Currently attending <a href="https://brainlabacademy.hr/">BrainLab Academy</a> for Front-End developing. When I'm not coding I like to spend my time playing video games, hang out with friends and watch movies.</p>
+            <section className="skills flex ">
                 {links}
             </section>
+            
             </div>
+            </div>
+            </article>
+            
+            
+            
+            
+            
             
             </section>
 

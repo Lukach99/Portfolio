@@ -1,0 +1,111 @@
+@import "src/styles/colors.scss";
+
+.project{
+    display: flex;
+    
+    justify-content: flex-start;
+    padding: 5% 10%;
+    margin-top: 100px;
+    
+
+    &__img{
+        position: relative;
+        z-index: 1;
+        &::after{
+            position: absolute;
+            content: '';
+            height:500px;
+            background-color: $color-secondary;
+            width: 115%;
+            top: -50px;
+            left: 0px;
+            display: block;
+            /* transform-origin: bottom; */
+            
+            z-index: -1 ;
+            
+        }
+        img{
+            width: 800px;
+        }
+
+        transition: transform 0.2s ease-in-out;
+        &:hover{
+            transform: scale(1.02);
+        }
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding-left: 5%;
+        z-index: 1;
+
+        h3{
+            font-size: 35px;
+            
+            margin-top: 0;
+        }
+        p{
+            line-height: 30px;
+            margin-bottom: 20px;
+            color: $color-placeholder;
+            
+        }
+
+
+
+        a{
+            position: relative;
+            text-decoration: none;
+            color: $color-placeholder;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 30px;
+            padding: 5px 10px;
+            z-index: 1;
+            transition: all 0.35s ease-in-out;
+            &::after{
+                position: absolute;
+                content: '';
+                height: 2px;
+                background-color: $color-tertiary;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                display: block;
+                /* transform-origin: bottom; */
+                transition: all 0.25s ease-in-out;
+                z-index: -1;
+                
+            }
+
+            
+            &:hover{
+                color: black;
+
+                &::after{
+                    color: black;
+                    background-color: #ff4d5a;
+                    height: 35px;
+                    
+                }
+            }
+        }
+    }
+}
+
+.rowRev{
+    flex-direction: row-reverse;
+    
+    .project__img::after{
+        left: auto;
+        right: 0px;
+    }
+
+    article{
+        padding-left: 0;
+        padding-right: 5%;
+    }
+}

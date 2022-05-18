@@ -1,13 +1,17 @@
 @import "src/styles/colors.scss";
 
 .skill-img{
-    padding: 15px ;
-    margin-bottom: 10px;
-    width: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 60px;
    /*  border: 2px solid $color-tertiary;
     border-radius: 15px; */
     color: white;
-    object-fit: contain;
+    
 
     transition: transform 0.2s ease-in-out;
 
@@ -15,8 +19,8 @@
         transform: scale(1.1);
     }
     .logo-img{
-        width: 65px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
         
     }
 

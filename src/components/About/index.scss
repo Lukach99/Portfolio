@@ -3,24 +3,57 @@
 
 
 .about{
-    height: 100vh;
+    
     background-color: $color-primary;
     color: $color-placeholder;
     text-align: left;
-    padding: 0% 10%;
+    padding: 0% 10% 10%;
     
 
     h2{
-        font-size: 50px;
+        position: relative;
+        font-size: 55px;
         margin-bottom: 80px;
+        z-index: 1;
+        &::after{
+            position: absolute;
+            content: '';
+            height:20px;
+            background-color: $color-tertiary;
+            width: 100%;
+            bottom: -5px;
+            left: 30px;
+            display: block;
+            /* transform-origin: bottom; */
+            
+            z-index: -1 ;
+            
+        }
     }
     
+
     div{
+        
         p{
             flex: 1;
             line-height: 40px;
-        }
+            font-size: 18px;
+            margin-top: 0;
 
+            a{
+                text-decoration: none;
+                color: $color-tertiary;
+                transition: border-bottom 0.1s ease-in-out;
+
+                &:hover{
+                    border-bottom: 2px solid $color-tertiary;
+                }
+            }
+        }
+        .profile-pic{
+            margin-right: 50px;
+        }
+       
         section{
             flex: 1;
             text-align: center;
@@ -36,10 +69,10 @@
 }
 
 .skills{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill,150px);
-   
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    justify-content: space-evenly;
     
 
 }

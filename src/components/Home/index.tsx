@@ -1,12 +1,13 @@
 import "./index.scss"
-
+import AnchorLink from 'react-anchor-link-smooth-scroll-v2'
 
 const Home = (props:any) => {
     return(
-        <section className={`home flex flex-center flex-column`} >
+        <section id="home" className={`home flex flex-center flex-column`} >
             <p>Hello, I'm Tino.<br />
             I'm a Front-end Developer.</p>
-            <a href="#">View my work</a>
+            <AnchorLink href="#projects">View my work</AnchorLink>
+            
             
         </section>
 

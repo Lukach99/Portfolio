@@ -1,12 +1,14 @@
 import "./index.scss"
+import AnchorLink from 'react-anchor-link-smooth-scroll-v2'
+
 
 const Navbar = (Props: any) => {
     return(
         <section className="navbar">
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <AnchorLink href='#about'>About</AnchorLink>
+            <AnchorLink href='#projects'>Projects</AnchorLink>
+            <AnchorLink href='#contact'>Contact</AnchorLink>
+          
         </section>
     )
 }
