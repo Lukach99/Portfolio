@@ -31,8 +31,8 @@ type Props={
 }
 
 const About = (props:any) => {
-    const links = imageLinks.map((item: Props) => { return (
-        <AboutImg name={item.name.toUpperCase()} imageLink={item.imageLink} ></AboutImg>)})
+    const links = imageLinks.map((item: Props, index:number) => { return (
+        <AboutImg key={index} name={item.name.toUpperCase()} imageLink={item.imageLink} ></AboutImg>)})
 
     return(
         <section id="about" className={`about flex flex-justify-start flex-align-center flex-column`} >

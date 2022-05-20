@@ -3,7 +3,15 @@ import Project from "./project"
 import ticTacToe from "../../images/tic-tac-toe.png"
 import phoneSite from "../../images/mobile-phone-site.png"
 
+import gsap from "gsap"
+
+import{ ScrollTrigger} from "gsap/ScrollTrigger"
+import { useRef, useEffect } from "react"
+
+gsap.registerPlugin(ScrollTrigger)
+
 const Projects = (props:any) => {
+    
     return(
         <section id="projects" className="projects flex flex-center flex-column" >
             <h2>Projects</h2>
