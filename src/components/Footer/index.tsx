@@ -1,20 +1,33 @@
 import "./index.scss"
 
-const Footer = () => { 
-    return (
-        <section id="contact" className="footer flex flex-column flex-center">
-            <h2>Contact</h2>
-            <section className="form-section">
-                <form action="https://getform.io/f/f01ad0e7-25b2-4d8f-96f9-2a1585793365" method="POST">
-                    <input type="text" name="Name" placeholder="Name"/>
-                    <input type="email" name="E-mail" placeholder="E-mail" />
-                    <textarea name="Message" id="" className="textarea"  placeholder="Message"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
-        </section>
-    )
+import AnchorLink from 'react-anchor-link-smooth-scroll-v2'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faAnglesLeft } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+
+const Footer = (props: any) => { 
+    return <section className="footer flex flex-column flex-center">
+        <div className="return">
+            <AnchorLink href="#home"> <FontAwesomeIcon icon={faAnglesLeft} size="2x" rotation={90} className="return-btn"/> </AnchorLink>
+        
+        </div>
+
+        <div>
+        <a href="https://github.com/Lukach99" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size="2x" className="m-r-20"/></a>
+        
+        <a href="https://www.linkedin.com/in/tino-luka%C4%8D-55b69b20a" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} size="2x" className="m-r-20"/></a>
+
+        <a href="mailto:lukac.tino@gmail.com"><FontAwesomeIcon icon={faEnvelope} size="2x"/></a>
+        
+        </div>
+
+        <s className="copyright">©2022 Tino Lukač All rights reserved Built by Tino Lukač</s>
+
+
+    </section>
+
  }
 
-
- export default Footer
+export default Footer

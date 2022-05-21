@@ -22,7 +22,7 @@ const Projects = (props:any) => {
             
             <Project imgLink={ticTacToe} projectName="Tic-Tac-Toe" gitLink="https://github.com/Lukach99/tic-tac-toe" liveLink="https://lukach99.github.io/tic-tac-toe/">This is my first project using Javascript, HTML, CSS. When I learned DOM events I immediately started doing this fun little project. It still has some bugs and quirks that I didn't polish but I was happy because I made something with logic behind it and it worked.</Project>
 
-            <Project imgLink={phoneSite} projectName="First website - My Phone" rowRev="rowRev" gitLink="https://github.com/Lukach99/Moj_mobitel" liveLink="https://lukach99.github.io/Moj_mobitel/">This is my first project using Javascript, HTML, CSS. When I learned DOM events I immediately started doing this fun little project. It still has some bugs and quirks that I didn't polish but I was happy because I made something with logic behind it and it worked.</Project>
+            <Project imgLink={phoneSite} projectName="First website - My Phone" rowRev="rowRev" gitLink="https://github.com/Lukach99/Moj_mobitel" liveLink="https://lukach99.github.io/Moj_mobitel/">This is my first project using Javascript, HTML, CSS. When I learned DOM events I immediately started doing this fun little project. It still has some bugs and quirks that I didn't polish </Project>
         </section>
         
     )

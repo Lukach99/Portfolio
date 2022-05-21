@@ -5,13 +5,13 @@ import "./index.scss"
 import gsap from "gsap"
 
 import{ ScrollTrigger} from "gsap/ScrollTrigger"
+import StyledAnchor from "../../Utilitie/Anchor-styled";
 
 gsap.registerPlugin(ScrollTrigger)
 
 const Project = ({projectName, imgLink, liveLink, gitLink, rowRev, children,}: Props) => {
 
     const elemRef = useRef(null)
-
     useEffect(() => { 
         const el = elemRef.current;
         if(rowRev){
@@ -19,8 +19,7 @@ const Project = ({projectName, imgLink, liveLink, gitLink, rowRev, children,}: P
         } else(
             gsap.fromTo(el, {x: 150,opacity: 0},{x: 0,opacity: 1, duration:2, scrollTrigger:{trigger: el}})
         )
-        
-        console.log(el)
+
      },[])
 
 
@@ -32,8 +31,8 @@ const Project = ({projectName, imgLink, liveLink, gitLink, rowRev, children,}: P
         <article className="project__info">
         <h3>{projectName}</h3>
         <p>{children}</p>
-        <a href={liveLink} target="_blank">LIVE SITE</a>
-        <a href={gitLink} target="_blank">LEARN MORE</a>
+        <StyledAnchor link={liveLink}>LIVE SITE</StyledAnchor>
+        <StyledAnchor link={gitLink}>LEARN MORE</StyledAnchor>
         </article>
         
 
