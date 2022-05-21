@@ -74,6 +74,12 @@
             }
         }
 
+        input:-webkit-autofill {
+            box-shadow:0 0 0px 50px $color-secondary inset ;
+            -webkit-box-shadow: 0 0 0px 50px $color-secondary inset;
+            -webkit-text-fill-color: $color-placeholder;
+        }
+
         button{
             align-self: flex-end;
             font-weight: bold;
