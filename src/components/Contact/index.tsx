@@ -1,7 +1,10 @@
 import StyledAnchor from "../Utilitie/Anchor-styled"
+
 import "./index.scss"
 
 const Contact = () => { 
+
+
     return (
         <section id="contact" className="contact flex flex-column flex-center">
             <h2>Contact</h2>
