@@ -1,26 +1,87 @@
+@import "src/styles/colors.scss";
+
 .navbar{
     display: flex;
-
     flex: 1.3;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    
-    
-
-    a{
-        text-decoration: none;
-        color: #DDDDDD ;
-       
-       
-        font-size: 18px;
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
         
-
-        /* &:hover{
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        
+        &-exit{
+            display: none;
+        }
+    
+        a{
+            text-decoration: none;
+            color: #DDDDDD ;
+            font-size: 18px;
             
-            border-bottom: 4px solid #F05454;
-            
-            
-        } */
+        }
     }
+
+    .nav-phone{
+        display: none;
+    }
+
 }
+
+
+@media (max-width: 600px){
+    .navbar{
+        
+        justify-content: flex-end;
+        border-bottom: none;
+        
+        button{
+            background-color: transparent;
+            border: none;
+            color: $color-placeholder;
+        }
+        .nav-phone{
+            display: block;
+
+           
+        }
+        
+        .nav{
+            display: none;
+            /* z-index: 2; */
+        }
+        .phone{
+            position: fixed;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            font-size: 40px;
+            justify-content: center;
+            align-items: center;
+            /* height: 200px; */
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: $color-secondary;
+
+            button{
+                margin-bottom: 20px;
+            }
+
+            a{
+                font-size: 40px;
+                
+            }
+
+            .nav-exit{
+                display: block;
+            }
+            
+        }
+        
+    }
+  }
+
+
