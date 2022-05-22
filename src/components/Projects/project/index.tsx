@@ -31,8 +31,8 @@ const Project = ({projectName, imgLink, liveLink, gitLink, rowRev, children,}: P
         <article className="project__info">
         <h3>{projectName}</h3>
         <p>{children}</p>
-        <StyledAnchor link={liveLink}>LIVE SITE</StyledAnchor>
-        <StyledAnchor link={gitLink}>LEARN MORE</StyledAnchor>
+        <StyledAnchor link={liveLink} blank={true}>LIVE SITE</StyledAnchor>
+        <StyledAnchor link={gitLink} blank={true}>LEARN MORE</StyledAnchor>
         </article>
         
 

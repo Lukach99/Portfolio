@@ -1,7 +1,7 @@
 import "./index.scss"
 import AnchorLink from 'react-anchor-link-smooth-scroll-v2'
 
-const StyledAnchor = ({link, isButton, children, target, isScroll}:Props ) => {
+const StyledAnchor = ({link, isButton, children, blank, isScroll}:Props ) => {
     if(isButton){
         return <button type="submit" className="styled-anchor styled-button" >{children}</button>
     }
@@ -12,9 +12,9 @@ const StyledAnchor = ({link, isButton, children, target, isScroll}:Props ) => {
                 <AnchorLink href={link}>{children}</AnchorLink>
         </div>
         
-        /* return <a href={link} className="styled-anchor" target={target ? "_blank" : "_self"}>{children}</a> */
     }
-    return <a href={link} className="styled-anchor" target={target ? "_blank" : "_self"}>{children}</a>
+    console.log(blank)
+    return <a href={link} className="styled-anchor" target={blank ? "_blank" : "_self"}>{children}</a>
 
 } 
 
@@ -22,7 +22,7 @@ const StyledAnchor = ({link, isButton, children, target, isScroll}:Props ) => {
 type Props={
     link?: string,
     isButton?: boolean,
-    target?: boolean,
+    blank?: boolean,
     isScroll?: boolean,
     children: any
 }
