@@ -48,8 +48,8 @@ const About = (props:any) => {
         const parEl = parRef.current;
        
        
-        gsap.fromTo(imgEl, {x: -150, opacity: 0},{x: 0, opacity:1, duration:2, scrollTrigger:{trigger: imgEl}})
-        gsap.fromTo(parEl, {x: 300, opacity: 0},{x: 0, opacity:1, duration:2, scrollTrigger:{trigger: parEl}})
+        gsap.fromTo(imgEl, {x: -150, opacity: 0},{x: 0, opacity:1, duration:2.5, scrollTrigger:{trigger: imgEl}})
+        gsap.fromTo(parEl, {x: 300, opacity: 0},{x: 0, opacity:1, duration:2.5, scrollTrigger:{trigger: parEl}})
        
      
      },[])
