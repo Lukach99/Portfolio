@@ -60,14 +60,14 @@ const About = (props:any) => {
 
 
             <article >
-            <div ref={imgRef} className="flex ">
+            <div ref={imgRef} className="flex  ">
                 <div className="img-div" >
                 <img className="profile-pic" src={profilePic} width="300" alt="bzbz"/>
                 </div>
             
             <div>
-                <div ref={parRef}>
-                <p >Just a young guy with passion for technology and photography, I'm a front-end developer with skills in JavaScript, React , Typescript, HTML and CSS. The unique combination of creativity, logic, technology and never running out of new things to discover, drives my excitement and passion for web development. Currently attending <a href="https://brainlabacademy.hr/">BrainLab Academy</a> for Front-End developing. When I'm not coding I like to spend my time playing video games, hang out with friends and watch movies.</p>
+                <div ref={parRef} className="about-info">
+                <p className="about-p">Just a young guy with passion for technology and photography, I'm a front-end developer with skills in JavaScript, React , Typescript, HTML and CSS. The unique combination of creativity, logic, technology and never running out of new things to discover, drives my excitement and passion for web development. Currently attending <a href="https://brainlabacademy.hr/">BrainLab Academy</a> for Front-End developing. When I'm not coding I like to spend my time playing video games, hang out with friends and watch movies.</p>
             <section className="skills flex ">
                 {links}
             </section>

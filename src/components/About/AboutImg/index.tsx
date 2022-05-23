@@ -5,7 +5,7 @@ const AboutImg = ({imageLink,name}:Props) => {
     return(
         <div className="skill-img">
             <img className="logo-img" src={imageLink} alt={name} />
-            <p>{name}</p>
+            <p className="skill-name">{name}</p>
         </div>
 
     );

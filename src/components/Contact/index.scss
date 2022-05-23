@@ -91,3 +91,27 @@
         } 
     }
 }
+
+
+@media (max-width: 600px){
+.contact{
+    padding-bottom: 25%;
+    h2{
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+}
+
+    .form-section{
+        width: 100%;
+        form{
+            width: 100%;
+
+            /* input{
+                width: 100%;
+            } */
+        }
+    }
+    
+
+}

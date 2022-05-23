@@ -77,3 +77,42 @@
     
 
 }
+
+@media (max-width: 600px){
+    .about{
+        h2{
+            margin-top: 0;
+            margin-bottom: 60px;
+            
+        }
+
+        .img-div{
+            display: none;
+        }
+
+        .about-p{
+            font-size: 17px;
+        }
+
+        .about-info{
+            p{
+                text-align: center;
+                line-height: 32px;
+                
+            }
+        }
+    }
+    
+    .skills{
+        
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 80px;
+        justify-content: space-evenly;
+        p{
+            font-size: 12px;
+        }
+    
+    }
+
+}

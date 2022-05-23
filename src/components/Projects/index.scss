@@ -42,3 +42,26 @@
 
     
 }
+
+
+@media (max-width: 600px){
+
+    .projects{
+        padding: 0;
+
+        h2{
+            margin-bottom: 50px;
+        }
+
+        .projects__p{
+            padding: 0 5%;
+        }
+        .projects__p-2{
+            line-height: 30px;
+        
+        }
+        
+    }
+    
+
+}

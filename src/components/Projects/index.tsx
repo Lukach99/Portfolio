@@ -18,7 +18,7 @@ const Projects = (props:any) => {
             <h2>Projects</h2>
             <p className="projects__p projects__p-1">Real projects coming soon...</p>
             
-            <p className="projects__p">Until then you can checkout my first ever little projects that were made using only HTML, CSS and Javascript except "My Portfolio website". I didn't tweaked the code as I learned new things because I wanted to remind myself how much progress I have made.</p>
+            <p className="projects__p projects__p-2">Until then you can checkout my first ever little projects that were made using only HTML, CSS and Javascript except "My Portfolio website". I didn't tweaked the code as I learned new things because I wanted to remind myself how much progress I have made.</p>
             
             <Project imgLink={portfolioSite} projectName="Well, this website" rowRev="rowRev" gitLink="https://github.com/Lukach99/Portfolio" liveLink="https://lukach99.github.io/Portfolio/">My portfolio is made with React.js, Typescript and Sass. This was my first attempt on website with React and is so much easier to structure the code and change components and I love it. This website will be constantly updated with future projects.</Project>
             
